@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>ODA SBS</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  
+  
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+251 221 12 08 60"><strong>CALL</strong> +251 221 12 08 60</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/yosu.gdr"><i class="ti-facebook"></i></a></li>
+           
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
+            
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="70" length="50" alt="logo"> <span style="color:rgb(223, 223, 223)">  &nbsp; ODA SBS  </span> 
+      </a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="teacher.html">Teacher</a>
+                <a class="dropdown-item" href="teacher-single.html">ODA Admin</a>
+                <a class="dropdown-item" href="notice.html">Notice</a>
+                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
+              
+                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
+                <a class="dropdown-item" href="course-single.html">Foreign language</a>
+                <a class="dropdown-item" href="event-single.html">Special Event</a>
+              
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4"><span style="color:rgb(251, 251, 251)"></span>
+              The main purpose compelled the ODA foundation as disscussed by intellectuals are:<br>
+There was a water supply problem in Oromia eventhrou there was a full of raw materils input for the providense of water. So ODA aimed at finding the remedy to this problem.<br>To conserve plants and other natural resources since ther was high declining rate of forest by that time.
+         <br> <br>  <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">
+              We are commited to ensure a safe and compassionate  learning community , while continually striving for excellence toward becoming respectful ,hostlic,and active global steward.
+             </p>
+            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">
+              Provide high quality education<br>Nurture talent and innoviation<br>To develop moral and spritual well being of each student in preparation for a life of service<br></p>
+            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero slider -->
+
+<!-- banner-feature -->
+<section class="bg-gray overflow-md-hidden">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <img class="img-fluid w-100" src="images/banner/banner-feature.png"  width="50" height="40" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our vision</h3>
+            <p><ul class="list-styled mb-5">
+              <li>See ODA Boarding School becoming the fountain of best minds to produce dedicated future leaders</li>
+<li>To produce professional who serve humanity in a diverse national and global society. </li>
+<br></ul><hr></li>
+              </ul><hr></p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Core Value </h3>
+            <p><ul type="square">
+              <li>Integrity</li>
+              <li>Team work</li>
+              <li>Commitment</li>
+              <li>Voluntarism</li>
+              <li>Responsiveness</li>
+              <li>Role model</li>
+              <li>Loyality</li>
+              <li>Punctuality</li>
+              <li>Respecting the law</li>
+
+              </ul><hr></p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
+            <p><ul class="list-styled mb-lg-3">
+              <li>Prodece Success full students</li>
+              <li>Make our students Bright Of their Country</li>
+              <li>Our students are top scorers in Entrance exam</li>
+              </ul><hr></p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
+            <p><ul class="list-styled mb-5">
+              <li>Provide high quality education</li>
+              <li> Nurture talent and innoviation</li>
+              <li>To develop moral and spritual well being of each student in preparation for a life of service</li>
+              </ul><hr></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title"><span style="color:green">About ODA SBS</span></h2>
+        <p><b>The main purpose compelled the ODA foundation as disscussed by intellectuals are:</b><br>
+          <li>There was a water supply problem in Oromia eventhrou there was a full of raw materils input for the providense of water. So ODA aimed at finding the remedy to this problem</li>
+          <li>To conserve plants and other natural resources since ther was high declining rate of forest by that time.</li>
+          <li>To full fill infrastructure such as helth care center, rode construction and some other builing for Oromo people.</li>
+          </ol>
+          <b>However,</b> the new idea which initiates to the education comes and the association have desided to build special boarding school in which students selected from all over <b>Oromia</b> learn with full of facility and established <b>special boarding school in Adama 2014G.C</b> for the first time in Oromia.
+          <br><br><br><br><hr></p><br>
+        <a href="about.html" class="btn btn-primary-outline">Learn more</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about us -->
+
+<!-- courses -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>12-08-2021</li>
+          <li class="list-inline-item"><a class="text-color" href="#">The Great Debate</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Biology </h4>
+        </a>
+        <p class="card-text mb-4"> Biology is a branch of Natural Science , which deals about Life. The word "Biology" is derived from the
+           greek words "bios"(mening life) and "Logos"(mening study).In general, Biologists studies:about living and non living organisim.
+          </p>
+          <br><br>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>03-9-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="#">ICT Training</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Programming</h4>
+        </a>
+        <p class="card-text mb-4"> Our school believes that producing students that fit to whole their enviroment is the basis to make our future 
+          community prosperous. Thats why it is giving a programming Trainig for dedicated students. </p><br><br>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Life of ODA</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Lifestyle Archives</h4>
+        </a>
+        <p class="card-text mb-4"> Our students which reside in the school are living in a good life style condition. We believe 
+          that good condition is the secret to our success </p><br><br><br><br><br>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Join ODA </a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Complete and successfull Education </h4>
+        </a>
+        <p class="card-text mb-4"> Our school have been enrolling students from all other the region every year so if your 
+          are grade 8 students still you have got a time please work hard to join us</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Experimental Class</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Learning Design</h4>
+        </a>
+        <p class="card-text mb-4">We believe that theorotical class is not only the key to success.Having this is mind our school 
+          provides an experimenatal Class both in Natural and also in extracurricular classes </p> <br><br><br>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Place to Exercise</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Club Demonstrations</h4>
+        </a>
+        <p class="card-text mb-4"> Our school has many clubs where our students share their ideas. 
+          For instance: <span style="color:green">GADASO, RED CROSS, ICT CLUB, SIENCE AND TECHNOLOGY CLUB, SPORT CLUB and so on ....</span> </p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /course list -->
+    <!-- mobile see all button -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="courses.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /courses -->
+
+<!-- cta -->
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 class="text-white font-secondary mb-0">Click to Join the Advance School</h6>
+        <h2 class="section-title text-white">Education In Advannce Networking</h2>
+        <a href="contact.html" class="btn btn-secondary">join now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /cta -->
+
+<!-- success story -->
+<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-4 position-relative success-video">
+        <a href="https://drive.google.com/file/d/1szwmF4YZzM_OpQ6IWHVChEhIm0CPYVVr/view?usp=sharing">
+          <img src="images/olif.png" width="30%" height="auto" alt="Male dorm" align="top" title="oda sbs" style="transform: rotate(90deg);">
+          <br><br>
+          <span class="cool-cta">click the above</span>
+          <i class="ti-control-play"></i>
+        </a>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">Success Stories</h2><ul class="list-styled mb-5">
+          <li>Oromia Development Association(ODA) was succeed by establishing special boarding school known as <b><span style="color: rgb(9, 224, 92);"> "ODA SBS"   </span></b> eight years ago.</li><br><br><li>Students from all corners of Oromia compete to join this school inorder to gain quality education and different skills.</li><br><br><li>Another great success was the assurance of quality of education which was a headache for Oromia Education Bureau at that time </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /success story -->
+
+<!-- events -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="events.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- event -->
+  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card border-0 rounded-0 hover-shadow">
+      <div class="card-img position-relative">
+        <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+        <div class="card-date"><span>2</span><br>july</div>
+      </div>
+      <div class="card-body">
+        <!-- location -->
+        <p><i class="ti-location-pin text-primary mr-2"></i>final examination</p>
+        <a href="event-single.html"><h4 class="card-title">A final examination, annual, exam, final interview, or simply final, is a test given to students at the end of a course of study or training. </h4></a><br><br>
+      </div>
+    </div>
+  </div>
+  <!-- event -->
+  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card border-0 rounded-0 hover-shadow">
+      <div class="card-img position-relative">
+        <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
+        <div class="card-date"><span>7</span><br>july</div>
+      </div>
+      <div class="card-body">
+        <!-- location -->
+        <p><i class="ti-location-pin text-primary mr-2"></i>End of the school year</p>
+        <a href="event-single.html"><h4 class="card-title">Set Goals. Setting goals for yourself both personally and academically will help you stay on track, Stay Organized,
+          Don't put off responsibilities.</h4></a><br><br>
+     <br><br> </div>
+    </div>
+  </div>
+  <!-- event -->
+  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card border-0 rounded-0 hover-shadow">
+      <div class="card-img position-relative">
+        <img class="card-img-top rounded-0" src="images/events/event-3.png" alt="event thumb">
+        <div class="card-date"><span></span><br></div>
+      </div>
+      <div class="card-body">
+        <!-- location -->
+        <p><i class="ti-location-pin text-primary mr-2"></i>EUEE</p>
+        <a href="event-single.html"><h4 class="card-title"> EUEE is the exam preparation app for grade 12 students. The app contains five years exam questions with their answer. If you are grade 12 students.
+
+            </h4></a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- mobile see all button -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="course.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /events -->
+
+<!-- teachers -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section-title"> School Administrators</h2>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/teacher-1.jpg" width="70" height="350" alt="teacher">
+          <div class="card-body">
+            <a href="https://www.facebook.com/abebe.zewdie.77">
+              <h4 class="card-title">Abebe Zewudie</h4>
+            </a>
+            <p>Director</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/abebe.zewdie.77"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/teacher-2.jpg" width="70" height="350" alt="teacher">
+          <div class="card-body">
+            <a href="https://www.facebook.com/meti.taye.16">
+              <h4 class="card-title">Meti Taye </h4>
+            </a>
+            <p>Deputy Director</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="https://www.facebook.com/meti.taye.16"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/teacher-3.jpg" width="70" height="350" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Gebisa Diriba</h4>
+            </a>
+            <p>Dean</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /teachers -->
+
+<!-- blog -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Latest News</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0"></li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">April 13,2022. &nbsp; <a href="https://www.facebook.com/permalink.php?story_fbid=1680885205584442&id=100009889352066">From Dejene Eticha facebook page</a> </li>
+        </ul>
+        <a href="https://www.facebook.com/permalink.php?story_fbid=1680885205584442&id=100009889352066">
+          <h4 class="card-title"></h4>
+        
+        <h4 class="card-text"><b>Sad News</b><br> Vise director of Oromia Development Association Mr.Kahlid Ali  passed away due to sudden sickness.</h4></a><br>
+        <br><a href="https://www.facebook.com/permalink.php?story_fbid=1680885205584442&id=100009889352066" class="btn btn-primary btn-sm">read more</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">April 05,2022</li>
+          </li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0"> <a href="https://www.facebook.com/yosu.gdr/posts/1021356032096509">From Dejene Eticha facebook</a> </li>
+        </ul>
+        <a href="https://www.facebook.com/yosu.gdr/posts/1021356032096509">
+          <h4 class="card-text"><b>sad news</b><br> Her name is Mrs. Sabaf Mulugeta ,she has worked  in ODA for 12 years in west Hararge zone due to sudden sickness she passed away so,ODA express its saddness to lost one its brave worker. </h4>
+          <br><br> </a>
+        <p class="card-text"></p>
+        <a href="https://www.facebook.com/yosu.gdr/posts/1021356032096509" class="btn btn-primary btn-sm">read more</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">April 18,2022</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">posted by Eejene Eticha</li>
+        </ul>
+        <a href="index.html">
+          <h4 class="card-title">The support has been made by members of ODA (Oromia Development Association) at Lidata district with the officials and administrators of the district supported society around Borana(famine)with different food products that cost around 5.5 mil birr and trasported by about 11 vechles to supported area.</h4><br><br>
+         <br> </a>
+        <p class="card-text"></p>
+        <a href="index.html" class="btn btn-primary btn-sm">read more</a>
+      </div>
+    </div>
+  </article>
+</div>
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Join Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+ 
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0"> 
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png"  width="70" length="50" alt="logo"> <span style="color:rgb(223, 223, 223)"> &nbsp;    ODA SBS  </span> 
+          </a>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="https://www.google.com/maps/place/Mana+Barumsa+Bultii+Addaa+Odaa,+Oda+Special+Boarding+School/@8.5224538,39.2389674,15z/data=!4m9!1m2!2m1!1sOromia+Develoment+Assocciation+Special+Boarding+School+!3m5!1s0x164b21c5f28905f1:0x6551b17aa0b83b6f!8m2!3d8.5224527!4d39.2503972!15sCjZPcm9taWEgRGV2ZWxvbWVudCBBc3NvY2NpYXRpb24gU3BlY2lhbCBCb2FyZGluZyBTY2hvb2xaOCI2b3JvbWlhIGRldmVsb21lbnQgYXNzb2NjaWF0aW9uIHNwZWNpYWwgYm9hcmRpbmcgc2Nob29skgEPYm9hcmRpbmdfc2Nob29smgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5UTmpkeVpGSjNFQUU">Ethiopia,Oromia,Adama</li></a>
+            <li class="mb-2">+251 221 12 08 60</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="About Us">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SUPPORT</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+            </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">RECOMMEND</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.facebook.com/astro.oda.33">About us</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+           </p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/astro.oda.33"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
