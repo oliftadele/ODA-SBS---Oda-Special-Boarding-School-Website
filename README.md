@@ -66,7 +66,7 @@ You only need a modern web browser to view this project.
 ## 📸 Screenshots
 | Desktop View | Mobile View |
 | :---: | :---: |
-| ![Desktop View](screenshots/Desktop%20View.png) | ![Mobile View](screenshots/MobileView.png) |
+| ![Desktop View](screenshots/Desktop%20View.png) | ![Mobile View](screenshots/Mobile%20View.png) |
 
 ## 🤝 Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
