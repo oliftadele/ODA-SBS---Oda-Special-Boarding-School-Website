@@ -66,7 +66,7 @@ You only need a modern web browser to view this project.
 ## 📸 Screenshots
 | Desktop View | Mobile View |
 | :---: | :---: |
-| ![Desktop Screenshot](https://via.placeholder.com/800x450?text=Desktop+Screenshot) | ![Mobile Screenshot](https://via.placeholder.com/200x400?text=Mobile+Screenshot) |
+| ![Desktop View](screenshots/Desktop%20View.png) | ![Mobile View](screenshots/MobileView.png) |
 
 ## 🤝 Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
